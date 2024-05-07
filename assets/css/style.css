@@ -1087,7 +1087,7 @@ ul {
   text-align: center;
   border-radius: 5px;
   display: inline-block;
-  background: #333F4D;
+  background: #363535;
   color: #fff;
   font-size: 13px;
 }
@@ -1336,7 +1336,7 @@ ul {
 }
 
 .bg-gray-black {
-  background: #333F4D;
+  background: #312f2f;
 }
 
 .bg-light {
@@ -1917,6 +1917,14 @@ ul {
   height: auto;
   max-width: 100px;
 }
+
+
+@media (max-width: 992px)  {
+  .navbar-area .nav-container .logo a img {
+    height: auto;
+    max-width: 60px;
+  }
+}
 .navbar-area .nav-container .btn-transparent {
   font-size: 13px;
   font-weight: 700;
@@ -2452,7 +2460,7 @@ ul {
   left: auto;
   right: 0;
   position: absolute;
-  top: 8px;
+  top: 13px !important;
   width: 40px;
   height: 40px;
   -webkit-transition-duration: 0.5s;
@@ -3530,6 +3538,7 @@ ul {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   position: relative;
+  height: 11rem;
 }
 .single-work-process-inner .thumb img {
   -webkit-transition: 0.4s;
@@ -4711,7 +4720,7 @@ ul {
 
 .single-progress-inner .progress {
   height: 12px;
-  background: #333F4D;
+  background: #312f2f;
   border-radius: 30px;
 }
 .single-progress-inner .progress .progress-bar {
@@ -6565,7 +6574,7 @@ ul {
 }
 .footer-area .widget_nav_menu ul li svg {
   margin-right: 8px;
-  color: #333F4D;
+  color: #312f2f;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -6721,4 +6730,8 @@ ul {
 
 .pd-top-45px {
   padding-top: 45px;
+}
+
+.pd-bottom-40px {
+  padding-bottom: 40px;
 }
