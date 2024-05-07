@@ -1717,7 +1717,7 @@ ul {
     ## Section title
 ------------------------------------------------*/
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   position: relative;
 }
 .section-title .sub-title {
@@ -2359,9 +2359,9 @@ ul {
   .navbar-area {
     background: #fff;
   }
-  .navbar-area .nav-container {
+  /* .navbar-area .nav-container {
     padding: 5px 0;
-  }
+  } */
   .nav-right-part {
     margin-right: 60px;
   }
@@ -6716,4 +6716,9 @@ ul {
 }
 .footer-area-2 .footer-bottom {
   border-top: 1px solid #e3e3e3;
+}
+
+
+.pd-top-45px {
+  padding-top: 45px;
 }
