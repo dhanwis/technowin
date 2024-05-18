@@ -6736,3 +6736,95 @@ ul {
 .pd-bottom-40px {
   padding-bottom: 40px;
 }
+
+
+
+
+#whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #3ebd4e;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+#whatsapp-icon i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media(max-width: 768px) {
+  #whatsapp-icon {
+      right: 20px;
+  }
+}
+
+#instagram-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f70b52;
+  position: fixed;
+  bottom: 85px;
+  right: 40px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+#instagram-icon i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media(max-width: 768px) {
+  #instagram-icon {
+      right: 20px;
+  }
+}
+
+
+
+#facebook-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #0863f7;
+  position: fixed;
+  bottom: 140px;
+  right: 40px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+#facebook-icon i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media(max-width: 768px) {
+  #facebook-icon {
+      right: 20px;
+  }
+}
