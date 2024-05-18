@@ -3158,6 +3158,7 @@ ul {
 ----------------------------------------------*/
 .single-service-inner {
   background: #fff;
+  height: 95%;
   padding: 40px 35px;
   margin-bottom: 30px;
   border-radius: 24px;
@@ -3197,6 +3198,7 @@ ul {
   border-radius: 5px;
   margin-top: 50px;
   padding: 35px;
+  height: 80%;
 }
 .single-service-inner.style-3 .thumb {
   height: 100px;
@@ -6745,7 +6747,7 @@ ul {
   height: 50px;
   background-color: #3ebd4e;
   position: fixed;
-  bottom: 30px;
+  bottom: 15px;
   right: 40px;
   display: flex;
   -webkit-box-pack: center;
@@ -6774,7 +6776,7 @@ ul {
   height: 50px;
   background-color: #f70b52;
   position: fixed;
-  bottom: 85px;
+  bottom: 70px;
   right: 40px;
   display: flex;
   -webkit-box-pack: center;
@@ -6805,7 +6807,7 @@ ul {
   height: 50px;
   background-color: #0863f7;
   position: fixed;
-  bottom: 140px;
+  bottom: 127px;
   right: 40px;
   display: flex;
   -webkit-box-pack: center;
