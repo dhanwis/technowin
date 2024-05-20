@@ -47,7 +47,7 @@ Version: 1.0.4
   --main-color: #bb925b;
   --main-color2: #EE0020;
   --heading-color: #101A29;
-  --paragraph-color: #737588;
+  --paragraph-color: #0e0e0f;
   --body-font: "Plus Jakarta Sans", sans-serif;
   --heading-font: "Plus Jakarta Sans", sans-serif;
   --body-font-size: 16px;
@@ -3185,6 +3185,7 @@ ul {
 }
 .single-service-inner .details p {
   margin-bottom: 28px;
+  height: 220px;
 }
 .single-service-inner:hover {
   -webkit-box-shadow: 0px 4px 20px rgba(19, 16, 34, 0.1);
@@ -6488,7 +6489,7 @@ ul {
 .footer-area {
   position: relative;
   margin-top: 90px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   background-color: #696868;
 }
 .footer-area:after {
@@ -6829,4 +6830,17 @@ ul {
   #facebook-icon {
       right: 20px;
   }
+}
+
+
+.h-20{
+  height: 20rem !important;
+}
+
+
+
+.single-team-inner .thumb2 {
+    position: relative;
+    /* border-radius: 22px; */
+    overflow: hidden;
 }

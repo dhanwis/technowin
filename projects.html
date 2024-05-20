@@ -27,7 +27,34 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
+<style>
+    /* Sticky navbar styles */
+.navbar-area {
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .sticky-active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Change to your desired background color */
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+    animation: fadeInDown 300ms ease-in-out;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+</style>
 <body>
 
     <div class="body-overlay" id="body-overlay"></div>
@@ -131,144 +158,99 @@
     <!-- page title end -->
 
     <!-- blog area start -->
-    <div class="blog-area pd-top-120 pd-bottom-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-list">
-                        <div class="thumb">
-                            <img src="assets/img/blog/4.png" alt="img">
-                        </div>
-                        <!-- <div class="details">
-                            <p class="date mb-3"><i class="far fa-calendar-alt"></i>October 19, 2023</p>
-                            <h5><a href="blog-details.html">Transforming businesses, one pixel at a time</a></h5>
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p><i class="far fa-user"></i>Sam Curren</p>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <p><i class="far fa-comments"></i>Sam Curren</p>
-                                    </div>
+    <div class="blog-area pd-bottom-120" style="padding-top: 30px;">
+        <div class="team-area bg-relative pd-bottom-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="single-team-inner border-radius-5 bg-white">
+                                <div class="thumb bg-gray border-radius-5">
+                                    <img src="assets/img/team/1.png" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Project</a></h5>
+                                    <p style="color: #bd9160;">Kannur, Kerala</p>
                                 </div>
                             </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-list">
-                        <div class="thumb">
-                            <img src="assets/img/blog/5.png" alt="img">
                         </div>
-                        <!-- <div class="details">
-                            <p class="date mb-3"><i class="far fa-calendar-alt"></i>June 19, 2023</p>
-                            <h5><a href="blog-details.html">The Importance of a Strong Digital for Strategy</a></h5>
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p><i class="far fa-user"></i>Sam Curren</p>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <p><i class="far fa-comments"></i>Sam Curren</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="single-team-inner border-radius-5 bg-white">
+                                <div class="thumb bg-gray border-radius-5">
+                                    <img src="assets/img/team/1.png" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Project</a></h5>
+                                    <p style="color: #bd9160;">Kannur, Kerala</p>
                                 </div>
                             </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-list">
-                        <div class="thumb">
-                            <img src="assets/img/blog/6.png" alt="img">
                         </div>
-                        <!-- <div class="details">
-                            <p class="date mb-3"><i class="far fa-calendar-alt"></i>October 19, 2023</p>
-                            <h5><a href="blog-details.html">Creating Engaging Content: A Guide for Digital</a></h5>
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p><i class="far fa-user"></i>Sam Curren</p>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <p><i class="far fa-comments"></i>Sam Curren</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="single-team-inner border-radius-5 bg-white">
+                                <div class="thumb bg-gray border-radius-5">
+                                    <img src="assets/img/team/1.png" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Project</a></h5>
+                                    <p style="color: #bd9160;">Kannur, Kerala</p>
                                 </div>
                             </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-list">
-                        <div class="thumb">
-                            <img src="assets/img/blog/7.png" alt="img">
                         </div>
-                        <!-- <div class="details">
-                            <p class="date mb-3"><i class="far fa-calendar-alt"></i>October 19, 2023</p>
-                            <h5><a href="blog-details.html">Transforming businesses, one pixel at a time</a></h5>
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p><i class="far fa-user"></i>Sam Curren</p>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <p><i class="far fa-comments"></i>Sam Curren</p>
-                                    </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="single-team-inner border-radius-5 bg-white">
+                                <div class="thumb bg-gray border-radius-5">
+                                    <img src="assets/img/team/1.png" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Project</a></h5>
+                                    <p style="color: #bd9160;" style="color: #bd9160;">Kannur, Kerala</p>
                                 </div>
                             </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-list">
-                        <div class="thumb">
-                            <img src="assets/img/blog/8.png" alt="img">
                         </div>
-                        <!-- <div class="details">
-                            <p class="date mb-3"><i class="far fa-calendar-alt"></i>June 19, 2023</p>
-                            <h5><a href="blog-details.html">The Importance of a Strong Digital for Strategy</a></h5>
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p><i class="far fa-user"></i>Sam Curren</p>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <p><i class="far fa-comments"></i>Sam Curren</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="single-team-inner border-radius-5 bg-white">
+                                <div class="thumb bg-gray border-radius-5">
+                                    <img src="assets/img/team/1.png" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Project</a></h5>
+                                    <p style="color: #bd9160;">Kannur, Kerala</p>
                                 </div>
                             </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-list">
-                        <div class="thumb">
-                            <img src="assets/img/blog/9.png" alt="img">
                         </div>
-                        <!-- <div class="details">
-                            <p class="date mb-3"><i class="far fa-calendar-alt"></i>October 19, 2023</p>
-                            <h5><a href="blog-details.html">Creating Engaging Content: A Guide for Digital</a></h5>
-                            <div class="meta">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <p><i class="far fa-user"></i>Sam Curren</p>
-                                    </div>
-                                    <div class="col-6 text-end">
-                                        <p><i class="far fa-comments"></i>Sam Curren</p>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="single-team-inner border-radius-5 bg-white">
+                                <div class="thumb bg-gray border-radius-5">
+                                    <img src="assets/img/team/1.png" alt="img">
+                                    
+                                </div>
+                                <div class="details">
+                                    <h5><a href="team-details.html">Project</a></h5>
+                                    <p style="color: #bd9160;">Kannur, Kerala</p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
+                    
+
                 </div>
             </div>
-            <!-- <div class="pagination">
-                <a class="prev page-numbers" href="http://icare.local/"><i class="fa fa-angle-left"></i></a>
-                <a class="page-numbers" href="http://icare.local/">1</a>
-                <span class="page-numbers current">2</span>
-                <a class="page-numbers" href="http://icare.local/page/3/">3</a>
-                <a class="page-numbers" href="http://icare.local/page/4/">4</a>
-                <a class="next page-numbers" href="http://icare.local/page/3/"><i class="fa fa-angle-right"></i></a>
-            </div> -->
         </div>
     </div>
     <!-- blog area end -->
@@ -283,12 +265,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 align-self-center">
-                        <p>© Dhanwis  2024 | All Rights Reserved</p>
+                        <p>© Technowin 2024 | All Rights Reserved</p>
                     </div>
                     <div class="col-md-6 text-lg-end">
-                        <!-- <a href="#">Trams & Condition</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Contact Us</a> -->
+                        <p>Powered by: 
+                            <a href="http://dhanwis.com/" target="_blank" target="_blank" style="color: #ebb741;">Dhanwis TechInfo Solutions </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -316,6 +298,22 @@
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
     </div> -->
     <!-- back to top area end -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var navbar = document.querySelector('.navbar-area');
+          var sticky = navbar.offsetTop;
+      
+          window.addEventListener('scroll', function() {
+            
+            if (window.pageYOffset > sticky) {
+              navbar.classList.add('sticky-active');
+            } else {
+              navbar.classList.remove('sticky-active');
+            }
+          });
+        });
+      </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

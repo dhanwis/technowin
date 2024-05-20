@@ -18,6 +18,34 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
+<style>
+    /* Sticky navbar styles */
+.navbar-area {
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .sticky-active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Change to your desired background color */
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+    animation: fadeInDown 300ms ease-in-out;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+</style>
 <body>
 
     <div class="body-overlay" id="body-overlay"></div>
@@ -121,7 +149,7 @@
     <!-- page title end -->
 
     <!-- contact area start -->
-    <div class="contact-area  pd-bottom-120">
+    <!-- <div class="contact-area  pd-bottom-120">
         <div class="container">
             <div class="contact-page-inner bg-gray">
                 <div class="section-title mb-4 pb-2">
@@ -155,7 +183,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- contact area end -->
 
     <!-- contact list start -->
@@ -165,13 +193,16 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="media single-contact-list">
                         <div class="media-left">
-                            <img src="mine/img/contact/contact.jpeg" alt="img" width="50px">
+                            <img src="mine/img/contact/15.jpg" alt="img" width="50px">
                         </div>
                         <div class="media-body">
-                            <h5>Contacts us</h5>
-                            <h6> 04602 080 367 </h6>
+                            <h5>Location</h5>
+                            <h6>Kadoor, Mayyil, Kerala - 670601</h6>
                         </div>
                     </div>
+
+
+                    
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="media single-contact-list">
@@ -179,19 +210,19 @@
                             <img src="mine/img/contact/14.jpg" alt="img" width="50%">
                         </div>
                         <div class="media-body">
-                            <h5>Your Email</h5>
-                            <h6> info@technowinupvc.com</h6>
+                            <h5>Email</h5>
+                            <h6>info@technowinupvc.com</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="media single-contact-list">
                         <div class="media-left">
-                            <img src="mine/img/contact/15.jpg" alt="img" width="50px">
+                            <img src="mine/img/contact/contact.jpeg" alt="img" width="50px">
                         </div>
                         <div class="media-body">
-                            <h5>Location</h5>
-                            <h6>Kadoor, Mayyil, Kerala - 670601</h6>
+                            <h5>Contacts us</h5>
+                            <h6> 04602 080 367 </h6>
                         </div>
                     </div>
                 </div>
@@ -206,20 +237,24 @@
     </div> 
     <!-- map end -->
 
+    <div>
+        <br>
+        <br>
+        <br>
+    </div>
     <!-- footer area start -->
-    <footer class="footer-area bg-black bg-cover">
+    <footer class="  mt-0">
         
-        
-        <div class="footer-bottom">
+        <div class="footer-bottom bg-gray-black">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 align-self-center">
-                        <p>© Yoursitename  2023 | All Rights Reserved</p>
+                        <p>© Technowin 2024 | All Rights Reserved</p>
                     </div>
                     <div class="col-md-6 text-lg-end">
-                        <a href="#">Trams & Condition</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Contact Us</a>
+                        <p>Powered by: 
+                            <a href="http://dhanwis.com/" target="_blank" style="color: #ebb741;">Dhanwis TechInfo Solutions </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -232,6 +267,22 @@
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
     </div>
     <!-- back to top area end -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var navbar = document.querySelector('.navbar-area');
+          var sticky = navbar.offsetTop;
+      
+          window.addEventListener('scroll', function() {
+            
+            if (window.pageYOffset > sticky) {
+              navbar.classList.add('sticky-active');
+            } else {
+              navbar.classList.remove('sticky-active');
+            }
+          });
+        });
+      </script>
 
 
     <!-- all plugins here -->

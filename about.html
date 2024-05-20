@@ -27,6 +27,34 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+    /* Sticky navbar styles */
+.navbar-area {
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .sticky-active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Change to your desired background color */
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+    animation: fadeInDown 300ms ease-in-out;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+</style>
 
 <body>
 
@@ -260,12 +288,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 align-self-center">
-                        <p>© Dhanwis  2024 | All Rights Reserved</p>
+                        <p>© Technowin 2024 | All Rights Reserved</p>
                     </div>
                     <div class="col-md-6 text-lg-end">
-                        <!-- <a href="#">Trams & Condition</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Contact Us</a> -->
+                        <p>Powered by: 
+                            <a href="http://dhanwis.com/" target="_blank" style="color: #ebb741;">Dhanwis TechInfo Solutions </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -286,7 +314,22 @@
     </a>
 
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var navbar = document.querySelector('.navbar-area');
+          var sticky = navbar.offsetTop;
+      
+          window.addEventListener('scroll', function() {
+            
+            if (window.pageYOffset > sticky) {
+              navbar.classList.add('sticky-active');
+            } else {
+              navbar.classList.remove('sticky-active');
+            }
+          });
+        });
+      </script>
+      
     <!-- back to top area start -->
     <!-- <div class="back-to-top">
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
