@@ -6627,16 +6627,18 @@ ul {
   /* padding: 23px 0; */
   position: relative;
   z-index: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .footer-bottom p {
   margin-bottom: 0;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
 }
 .footer-bottom a {
   margin-right: 10px;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
 }
 .footer-bottom a:last-child {
   margin-right: 0;
