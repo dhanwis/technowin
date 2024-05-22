@@ -6846,3 +6846,7 @@ ul {
     /* border-radius: 22px; */
     overflow: hidden;
 }
+
+.text-justify{
+  text-align: justify;
+}
