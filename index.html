@@ -53,10 +53,49 @@
       transform: translateY(0);
     }
   }
+
+  #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  /* Add background color (optional) */
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader img {
+  animation: pulse 2s infinite;
+  /* Add animation if desired */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+  
   
 </style>
 
 <body>
+
+
+    <div id="preloader">
+        <img src="mine/img/techno-win-logo.png" alt="Loading" width="70px">
+    </div>
+
 
     <div class="body-overlay" id="body-overlay"></div>
 
@@ -749,7 +788,7 @@
     </div>
     <!-- project area start -->
 
-
+         
     <!-- footer area start -->
     <footer class="  mt-0">
         
@@ -806,6 +845,20 @@
             }
           });
         });
+      </script>
+
+      <script>
+        window.onload = function() {
+            // Fade out the preloader over 0.5 seconds
+            var preloader = document.getElementById("preloader");
+            preloader.style.transition = "opacity 0.5s ease-in-out";
+            preloader.style.opacity = 0;
+        
+            // Remove the preloader after fading out
+            setTimeout(function() {
+              preloader.parentNode.removeChild(preloader);
+            }, 500);
+          }
       </script>
       
 
