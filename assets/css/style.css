@@ -6856,3 +6856,9 @@ ul {
 .text-justify{
   text-align: justify;
 }
+
+@media (min-width: 1300px) {
+  .custom-container {
+      max-width: 1340px !important;
+  }
+}
